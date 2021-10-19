@@ -26,7 +26,7 @@ touch provider.tf
 
 > **What is HCL?**: "The HashiCorp Configuration Language (HCL) is a configuration language authored by HashiCorp. HCL is used with HashiCorp’s cloud infrastructure automation tools, such as Terraform. The language was created with the goal of being both human and machine friendly. It is JSON compatible, which means it is interoperable with other systems outside of the Terraform product line."
 
-Open `provider.tf`in your text editor, and paste in the configuration below. Be sure to replace `<NAME>` with the path to the service account key file provided by the moderator created in the **"Initialize accounts"** step.
+Open `provider.tf` in your text editor, and paste in the configuration below. Be sure to replace `<NAME>` with the path to the service account key file provided by the moderator created in the **"Initialize accounts"** step.
 
 ```hcl
 terraform {
@@ -67,6 +67,38 @@ To learn more, reference the [Google provider documentation.](https://registry.t
 
 ---
 
-When you create a new configuration — or check out an existing configuration from version control — you need to initialize the directory with `terraform init`command. This step downloads the providers defined in the configuration.
+When you create a new configuration — or check out an existing configuration from version control — you need to initialize the directory with `terraform init` command. This step downloads the providers defined in the configuration.
+
+```shell
+$ terraform init
+
+Initializing the backend...
+
+Initializing provider plugins...
+- Finding hashicorp/google versions matching ">= 3.88.0"...
+- Installing hashicorp/google v3.89.0...
+- Installed hashicorp/google v3.89.0 (signed by HashiCorp)
+
+Terraform has created a lock file .terraform.lock.hcl to record the provider
+selections it made above. Include this file in your version control repository
+so that Terraform can guarantee to make the same selections by default when
+you run "terraform init" in the future.
+
+Terraform has been successfully initialized!
+
+You may now begin working with Terraform. Try running "terraform plan" to see
+any changes that are required for your infrastructure. All Terraform commands
+should now work.
+
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.
+```
 
 Terraform downloads the **google** provider and installs it in a hidden subdirectory of your current working directory, named `.terraform`. The `terraform init` command prints the provider version Terraform installed. Terraform also creates a lock file named `.terraform.lock.hcl`, which specifies the exact provider versions used to ensure that every Terraform run is consistent. This also allows you to control when you want to upgrade the providers used in your configuration.
+
+### Additional commands
+
+- `terraform fmt` to format terraform files.
+
+[Next Step - Deploy resources](./2-deploy-resources.md)
