@@ -33,7 +33,7 @@ $ terraform -chdir=terraform-init output -json > secret/keys.json
 **Steps:**
 
 1. [Initialize terraform project](steps/1-initialize-terraform-project.md)
-2. [Deploy first resource - plan, apply, destroy](steps/2-deploy-first-resource.md)
+2. [Deploy resources - plan, apply, destroy](steps/2-deploy-resources.md)
 3. [Project configuration and deploy - state, output](steps/3-project-configuration-and.deploy.md)
 4. [Clean up and next steps](steps/4-clean-up-and-next-steps.md)
 
