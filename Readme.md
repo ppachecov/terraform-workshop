@@ -16,16 +16,16 @@ This workshop is designed as an introduction to terraform as an [IaC](https://ww
 To interact with the tool and the Google Cloud to provision infrastructure, we need to set up a couple of service accounts for every participant in the workshop. To do this run the **"terraform-init"** scripts. Be sure to replace `<PROJECT_ID>` with a valid project's ID.
 
 ```shell
-$ export TF_VAR_gcp_project_id=<PROJECT_ID>
-$ export GOOGLE_CREDENTIALS=../secret/credential.json
-$ terraform -chdir=terraform-init init
-$ terraform -chdir=terraform-init apply
+export TF_VAR_gcp_project_id=<PROJECT_ID>
+export GOOGLE_CREDENTIALS=../secret/credential.json
+terraform -chdir=terraform-init init
+terraform -chdir=terraform-init apply
 ```
 
 Once created, assign one sa to each participant.
 
 ```shell
-$ terraform -chdir=terraform-init output -json > secret/keys.json
+terraform -chdir=terraform-init output -json > secret/keys.json
 ```
 
 ## Workshop
@@ -42,7 +42,7 @@ $ terraform -chdir=terraform-init output -json > secret/keys.json
 Remember destroy the service accounts created for this workshop.
 
 ```shell
-$ terraform -chdir=terraform-init destroy
+terraform -chdir=terraform-init destroy
 ```
 
 ---

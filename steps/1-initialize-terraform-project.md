@@ -12,13 +12,13 @@ To learn more, reference the [providers documentation.](https://www.terraform.io
 
 Each terraform project must be in its own working directory. Create and change into a directory for your project.
 
-```bash
+```shell
 mkdir terraform-gcp-workshop && cd terraform-gcp-workshop
 ```
 
 Terraform loads all files ending in .tf or .tf.json in the working directory. Create a provider.tf file for your configuration.
 
-```bash
+```shell
 touch provider.tf
 ```
 
