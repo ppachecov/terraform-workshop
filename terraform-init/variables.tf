@@ -1,5 +1,5 @@
 variable "gcp_project_id" {
-  default     = "cencosudx"
+  default     = ""
   description = "GCP project id"
 }
 

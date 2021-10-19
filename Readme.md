@@ -13,9 +13,10 @@ This workshop is designed as an introduction to terraform as an [IaC](https://ww
 
 > ℹ️ This section is for the moderator only. Remember, you need a master credential for GCP.
 
-To interact with the tool and the Google Cloud to provision infrastructure, we need to set up a couple of service accounts for every participant in the workshop. To do this run the **"terraform-init"** scripts.
+To interact with the tool and the Google Cloud to provision infrastructure, we need to set up a couple of service accounts for every participant in the workshop. To do this run the **"terraform-init"** scripts. Be sure to replace `<PROJECT_ID>` with a valid project's ID.
 
 ```bash
+export TF_VAR_gcp_project_id=<PROJECT_ID>
 export GOOGLE_CREDENTIALS=../secret/credential.json
 terraform -chdir=terraform-init init
 terraform -chdir=terraform-init apply
@@ -34,7 +35,7 @@ terraform -chdir=terraform-init output -json > secret/keys.json
 1. [Initialize terraform project](steps/1-initialize-terraform-project.md)
 2. [Deploy first resource - plan, apply, destroy](steps/2-deploy-first-resource.md)
 3. [Project configuration and deploy - state, output](steps/3-project-configuration-and.deploy.md)
-4. [Clean up](steps/4-clean-up.md)
+4. [Clean up and next steps](steps/4-clean-up-and-next-steps.md)
 
 ## Destroy accounts
 
