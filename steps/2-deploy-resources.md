@@ -351,4 +351,4 @@ To lear more, reference to [Terraform output comand documentation](https://www.t
 
 ---
 
-[Next Step - Deploy resources](./3-terraform-state.md)
+[Next Step - Terraform state](./3-terraform-state.md)
