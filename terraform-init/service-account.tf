@@ -9,5 +9,7 @@ module "service-accounts" {
 
   project_roles = [
     "${var.gcp_project_id}=>roles/editor",
+    "${var.gcp_project_id}=>roles/cloudfunctions.developer",
+    "${var.gcp_project_id}=>roles/storage.objectAdmin",
   ]
 }
