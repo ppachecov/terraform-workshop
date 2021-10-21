@@ -8,6 +8,7 @@ This workshop is designed as an introduction to terraform as an [IaC](https://ww
 
 - Install [terraform cli](https://www.terraform.io/downloads.html).
 - Install [VSCode](https://code.visualstudio.com) or some other editor.
+- Install [jq](https://stedolan.github.io/jq/download/).
 
 ## Initialize accounts
 
@@ -54,3 +55,4 @@ terraform -chdir=terraform-init destroy
 - [Terraform registry](https://registry.terraform.io) to search terraform modules.
 - [Google Cloud SQL](https://cloud.google.com/sql).
 - [Google Cloud Functions](https://cloud.google.com/functions).
+- [Google Cloud regions and zones](https://cloud.google.com/compute/docs/regions-zones).
