@@ -11,5 +11,9 @@ module "service-accounts" {
     "${var.gcp_project_id}=>roles/editor",
     "${var.gcp_project_id}=>roles/cloudfunctions.developer",
     "${var.gcp_project_id}=>roles/storage.objectAdmin",
+    "${var.gcp_project_id}=>roles/cloudsql.editor",
+    "${var.gcp_project_id}=>cloudsql.instances.create",
+    "${var.gcp_project_id}=>cloudsql.users.create",
+    "${var.gcp_project_id}=>cloudsql.users.list",
   ]
 }
