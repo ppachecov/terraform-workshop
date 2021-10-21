@@ -4,7 +4,7 @@ resource "google_sql_database" "database" {
 }
 
 resource "google_sql_database_instance" "master" {
-  name                = "${var.db_name}-db-instance"
+  name                = "${var.workshop_user}-db-instance"
   database_version    = "POSTGRES_11"
   region              = "us-east1"
   deletion_protection = false
