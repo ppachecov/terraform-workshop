@@ -38,3 +38,7 @@ terraform.rc
 
 # secret folder
 secret/**/*
+temp/**/*
+
+# node
+node_modules
