@@ -1,6 +1,6 @@
 # Initialize Terraform project
 
-Now we have everything we need to start deploying infrastructure using Terraform. You will use this, to provision, update and destroy a simple project based on a Google Cloud Function that uses a Redis as a memory store. You will learn about [HCL](https://github.com/hashicorp/hcl), provider configurations, and input variables.
+Now we have everything we need to start deploying infrastructure using Terraform. You will use this, to provision, update and destroy a simple project based on a Google Cloud Function that uses a PostgreSQL database as a store. You will learn about [HCL](https://github.com/hashicorp/hcl), provider configurations, and input variables.
 
 ## Provider configuration
 
