@@ -72,8 +72,7 @@ terraform apply --auto-approve
 Test our function
 
 ```shell
-FN=$(terraform output url)
-curl FN
+curl $(terraform output -json | jq .url.value | tr -d '"')
 ```
 
 Remember destroy everything.
