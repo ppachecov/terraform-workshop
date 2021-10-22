@@ -81,6 +81,17 @@ Remember destroy everything.
 terraform destroy
 ```
 
+---
+
+## Best practices
+
+- Use **remote backend** configuration for terraform state.
+  - [Terraform remote backend documentation](https://www.terraform.io/docs/language/settings/backends/remote.html).
+  - Recommended use of [Consul](https://www.consul.io/) as backend. To learn more, reference [Consul backend configuration](https://www.terraform.io/docs/language/settings/backends/consul.html)
+- Use a remote configuration management or secret management to store output configurations and secrets.
+  - [Consul as remot econfiguration management](https://registry.terraform.io/providers/hashicorp/consul/latest/docs/resources/keys).
+  - [Vault as secret management](https://registry.terraform.io/providers/hashicorp/vault/latest/docs/resources/generic_secret).
+
 That's it!
 
 Happy coding.
