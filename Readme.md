@@ -35,7 +35,7 @@ terraform -chdir=terraform-init output -json > secret/keys.json
 
 1. [Initialize terraform project](steps/1-initialize-terraform-project.md)
 2. [Deploy resources - plan, apply, destroy](steps/2-deploy-resources.md)
-3. [Project configuration and deploy - state, output](steps/3-project-configuration-and.deploy.md)
+3. [Project configuration and deploy - state, output](steps/3-terraform-state.md)
 4. [Improvements and clean up](steps/4-improvements-and-clean-up.md)
 
 ## Destroy accounts
