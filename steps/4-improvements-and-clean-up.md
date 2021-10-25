@@ -91,6 +91,8 @@ terraform destroy
 - Use a remote configuration management or secret management to store output configurations and secrets.
   - [Consul as remot econfiguration management](https://registry.terraform.io/providers/hashicorp/consul/latest/docs/resources/keys).
   - [Vault as secret management](https://registry.terraform.io/providers/hashicorp/vault/latest/docs/resources/generic_secret).
+- Use pre-commit to ensure quality, [Pre-commit-hooks](https://github.com/pre-commit/pre-commit-hooks)
+  - [Terraform pre-commit](https://github.com/antonbabenko/pre-commit-terraform)
 
 That's it!
 
